@@ -4,7 +4,7 @@
 
 *A personal basketball stats tracker: game log, season averages, progress chart, and import from the Israel Basketball Association website. Vanilla JavaScript + a small Python server, no frameworks.*
 
-**[לגרסה המקוונת](#)**: אפשר ללחוץ שם על "טעינת נתוני דוגמה" כדי לראות את האפליקציה עם נתונים.
+**[לגרסה המקוונת](https://att4ckm4trix.github.io/basketball-stats/)**: אפשר ללחוץ שם על "טעינת נתוני דוגמה" כדי לראות את האפליקציה עם נתונים.
 
 ## מה האפליקציה עושה
 
