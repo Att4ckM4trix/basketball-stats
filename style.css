@@ -1,0 +1,225 @@
+/* ===== הגדרות כלליות ===== */
+* {
+  box-sizing: border-box; /* רוחב של אלמנט כולל את הריפוד והמסגרת שלו */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Arial, sans-serif;
+  background: #f4f1ec;
+  color: #222;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;   /* ממרכז את התוכן באמצע המסך */
+  padding: 16px;
+}
+
+h1 {
+  color: #d35400;
+}
+
+.muted {
+  color: #777;
+}
+
+/* ===== "כרטיס": קופסה לבנה עם צל ===== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* כשעורכים משחק, הטופס מקבל מסגרת כתומה כדי שיהיה ברור שזה מצב עריכה */
+.card.editing {
+  outline: 3px solid #d35400;
+}
+
+/* ===== הטופס ===== */
+fieldset {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin: 0 0 12px;
+  padding: 12px;
+}
+
+legend {
+  font-weight: bold;
+  color: #d35400;
+  padding: 0 6px;
+}
+
+.fields {
+  display: grid;
+  /* כמה עמודות שנכנסות, כל אחת לפחות 160px רוחב */
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 4px;
+}
+
+label small {
+  font-weight: normal;
+  color: #777;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: 2px solid #d35400;
+  border-color: transparent;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #d35400;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b84700;
+}
+
+.form-actions button {
+  flex: 1; /* הכפתורים מתחלקים שווה ברוחב */
+}
+
+button.secondary {
+  background: #eee;
+  color: #333;
+}
+
+button.secondary:hover {
+  background: #ddd;
+}
+
+.error {
+  color: #c0392b;
+}
+
+/* ===== ייבוא ===== */
+.import-row {
+  display: flex;
+  gap: 8px;
+}
+
+.import-row input {
+  flex: 1;          /* שדה הלינק תופס את כל המקום שנשאר */
+  direction: ltr;   /* לינקים נכתבים משמאל לימין */
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: wait;
+}
+
+/* הודעה מעל הטופס כשהוא מולא מאתר האיגוד */
+.hint {
+  background: #fdf2e9;
+  border-right: 4px solid #d35400;   /* פס צבעוני בצד ימין (תחילת השורה בעברית) */
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+#storage-info {
+  text-align: center;
+  font-size: 14px;
+}
+
+.success {
+  color: #1e8449;
+}
+
+/* ניצחון והפסד בעמודת התוצאה */
+.win {
+  color: #1e8449;
+  font-weight: bold;
+}
+
+.loss {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ===== הגרף ===== */
+.chart-container {
+  position: relative;
+  height: 300px; /* Chart.js ממלא את הגובה של הקופסה הזו */
+}
+
+/* ===== הטבלה ===== */
+.table-wrapper {
+  overflow-x: auto; /* במסך צר (טלפון) הטבלה נגללת הצידה במקום לשבור את הדף */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+th {
+  background: #fdf2e9;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+/* שורת הממוצעים */
+tfoot td {
+  font-weight: bold;
+  background: #fdf2e9;
+  border-top: 2px solid #d35400;
+}
+
+/* כפתורים קטנים בתוך הטבלה */
+.row-btn {
+  padding: 4px 10px;
+  font-size: 14px;
+  background: #eee;
+  color: #333;
+  margin: 0 2px;
+}
+
+.row-btn:hover {
+  background: #ddd;
+}
+
+.row-btn.delete {
+  color: #c0392b;
+}
+
+.row-btn.delete:hover {
+  background: #fadbd8;
+}

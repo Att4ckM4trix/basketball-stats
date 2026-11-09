@@ -1,0 +1,20 @@
+[
+  { "id": 1, "date": "2026-10-06", "opponent": "ברקים צפון (דוגמה)", "teamScore": 61, "opponentScore": 55, "result": "win",
+    "minutes": 24, "points": 11, "rebounds": 6, "assists": 3, "steals": 2, "turnovers": 2,
+    "fgMade": 4, "fgAttempted": 9, "threeMade": 1, "threeAttempted": 3, "ftMade": 2, "ftAttempted": 2 },
+  { "id": 2, "date": "2026-10-13", "opponent": "נשרי העמק (דוגמה)", "teamScore": 58, "opponentScore": 63, "result": "loss",
+    "minutes": 28, "points": 17, "rebounds": 8, "assists": 2, "steals": 1, "turnovers": 3,
+    "fgMade": 6, "fgAttempted": 12, "threeMade": 2, "threeAttempted": 5, "ftMade": 3, "ftAttempted": 4 },
+  { "id": 3, "date": "2026-10-20", "opponent": "גלי החוף (דוגמה)", "teamScore": 66, "opponentScore": 52, "result": "win",
+    "minutes": 20, "points": 8, "rebounds": 7, "assists": 4, "steals": 1, "turnovers": 2,
+    "fgMade": 3, "fgAttempted": 10, "threeMade": 1, "threeAttempted": 4, "ftMade": 1, "ftAttempted": 2 },
+  { "id": 4, "date": "2026-10-27", "opponent": "אריות הגליל (דוגמה)", "teamScore": 72, "opponentScore": 68, "result": "win",
+    "minutes": 30, "points": 20, "rebounds": 9, "assists": 3, "steals": 3, "turnovers": 1,
+    "fgMade": 7, "fgAttempted": 13, "threeMade": 1, "threeAttempted": 2, "ftMade": 5, "ftAttempted": 6 },
+  { "id": 5, "date": "2026-11-03", "opponent": "כוכבי הדרום (דוגמה)", "teamScore": 54, "opponentScore": 60, "result": "loss",
+    "minutes": 26, "points": 12, "rebounds": 5, "assists": 5, "steals": 2, "turnovers": 4,
+    "fgMade": 5, "fgAttempted": 11, "threeMade": 2, "threeAttempted": 6, "ftMade": 0, "ftAttempted": 0 },
+  { "id": 6, "date": "2026-11-08", "opponent": "דולפיני הכרמל (דוגמה)", "teamScore": 63, "opponentScore": 59, "result": "win",
+    "minutes": 27, "points": 16, "rebounds": 11, "assists": 2, "steals": 1, "turnovers": 2,
+    "fgMade": 6, "fgAttempted": 10, "threeMade": 1, "threeAttempted": 3, "ftMade": 3, "ftAttempted": 3 }
+]
